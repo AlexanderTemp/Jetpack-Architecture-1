@@ -11,7 +11,7 @@ interface TaskDao {
 
     // Solo List<LocalTask> te obtiene la lista de tareas
     // Con Flow te avisa cuando las tareas cambien
-    @Query("SELECT * FROM Task")
+    @Query("SELECT * FROM task")
     fun observeAll(): Flow<List<LocalTask>>
 
 }
